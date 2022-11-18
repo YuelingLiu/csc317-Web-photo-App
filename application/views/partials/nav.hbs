@@ -1,0 +1,27 @@
+<nav class="text-bar-icon">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <a href="/" id="authenticate-button" class="nav-items anchor-buttons">Home</a>
+
+  <input id="search-text" name="search-text" type="text" placeholder="Search...">
+  <i id="search-button" class="fa fa-search"> </i>
+
+
+  <a href="/postimage" id="post-button" class="nav-items anchor-buttons">Post</a>
+
+  <a href="/registration" id="authenticate-button" class="nav-items anchor-buttons">Register</a>
+
+  {{#if logged}}
+  <a id="logout-button" class="authenticate-button nav-items anchor-buttons">Log out</a>
+
+  {{else}}
+  <a href="/login" id="authenticate-button" class="nav-items anchor-buttons">Login</a>
+
+  {{/if}}
+
+
+
+</nav>

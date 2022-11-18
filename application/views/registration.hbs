@@ -1,0 +1,45 @@
+<form id="form" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+    <header>
+        <h1>Register here </h1>
+    </header>
+
+
+    <div class="user-name">
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Username" name="username" required>
+
+    </div>
+
+    <div class="user-email">
+        <label>Email</label>
+
+        <input type="email" id="email" placeholder="Email" name="email" pattern="+@globex\.com" required>
+    </div>
+
+    <div class="user-password">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Password" name="password" required>
+    </div>
+
+
+    <div class="user-comfirm">
+        <label>Confirm password</label>
+        <input type="password" id="password-confirm" placeholder="Confirm-password" name="cpassword" required>
+    </div>
+
+    <div class="check-box">
+        <p><input type="checkbox" required> I acknowledge that I am over 13 years of age </u></p>
+        <p><input type="checkbox" required> I have read and accept the <a href="http://"> TOS</a> and <a
+                href="http://">Pricacy
+                Rules</a></p>
+    </div>
+
+
+    <div class="button-row">
+
+        <button id="sign up" value="sign-up">Sign up</button>
+        <button id="reset" value="reset" onClick="this.form.reset()">Reset</button>
+
+    </div>
+
+</form>

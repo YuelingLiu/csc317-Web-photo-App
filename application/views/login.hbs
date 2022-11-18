@@ -1,0 +1,31 @@
+<form id="form" method="POST" action="/users/login" enctype="application/x-www-form-urlencoded">
+    <header>
+        <h1>
+            Login
+        </h1>
+    </header>
+
+
+    <div class="username">
+        <label for="username">Username</label>
+        <input id="username" type="username" placeholder="Username" name="username" required>
+    </div>
+
+    <div class="possword">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Password" name="password" required>
+
+    </div>
+
+
+    <div class="button-row">
+        <button id="login">Login</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <div class="make-account">Do not have an account?
+        <a href="/registration">Register Here!</a>
+    </div>
+
+
+</form>
